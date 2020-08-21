@@ -3,12 +3,12 @@
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('gaokao_session_tokens', {
     token: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       comment: 'token'
     },
     scope: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: true,
       comment: '作用域'
     },
@@ -18,7 +18,7 @@ module.exports = function(sequelize, DataTypes) {
       comment: '负载'
     },
     user_id: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: true,
       comment: '用户 id'
     },

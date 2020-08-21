@@ -10,13 +10,13 @@ module.exports = function(sequelize, DataTypes) {
       comment: '订单 id'
     },
     order_sn: {
-      type: DataTypes.CHAR(22),
+      type: DataTypes.BIGINT(22),
       allowNull: false,
       defaultValue: "",
       comment: '订单编号'
     },
     payment_sn: {
-      type: DataTypes.STRING(20),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '支付编号'
@@ -43,7 +43,7 @@ module.exports = function(sequelize, DataTypes) {
       comment: '收款人 id'
     },
     type: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '交易类型：1注册、2打赏、3付费主题'
@@ -59,19 +59,19 @@ module.exports = function(sequelize, DataTypes) {
       comment: '主题 id'
     },
     status: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '订单状态：0待付款；1已付款；2.取消订单；3支付失败；'
     },
     payment_type: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '付款方式：微信（10：pc扫码，11：h5支付，12：微信内支付'
     },
     is_anonymous: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '是否匿名(0否1是)'

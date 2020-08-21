@@ -20,7 +20,7 @@ module.exports = function(sequelize, DataTypes) {
       comment: '用户提现金额'
     },
     order_count: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       comment: '订单数量'
     },

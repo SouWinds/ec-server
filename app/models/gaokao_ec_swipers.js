@@ -7,11 +7,11 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     title: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: true
     },
     img_src: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: true
     },
     created_at: {
@@ -23,11 +23,11 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     order: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: true
     },
     target: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: true
     },
     opentime: {
@@ -39,11 +39,11 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     category: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: true
     },
     status: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: true
     }
   }, {

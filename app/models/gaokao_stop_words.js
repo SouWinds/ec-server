@@ -15,25 +15,25 @@ module.exports = function(sequelize, DataTypes) {
       comment: '创建用户 id'
     },
     ugc: {
-      type: DataTypes.STRING(10),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '用户内容处理方式'
     },
     username: {
-      type: DataTypes.STRING(10),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '用户名处理方式'
     },
     find: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '敏感词或查找方式'
     },
     replacement: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '替换词或替换规则'

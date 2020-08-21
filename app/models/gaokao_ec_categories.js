@@ -7,27 +7,27 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     order: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: true
     },
     title: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: true
     },
     parent: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: true
     },
     description: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: true
     },
     icon: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: true
     },
     target: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: true
     },
     ctime: {

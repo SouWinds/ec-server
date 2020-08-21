@@ -16,25 +16,25 @@ module.exports = function(sequelize, DataTypes) {
       comment: '操作用户 id'
     },
     action: {
-      type: DataTypes.CHAR(20),
+      type: DataTypes.BIGINT(20),
       allowNull: false,
       defaultValue: "",
       comment: '操作'
     },
     message: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '备注'
     },
     log_able_id: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '模型 id'
     },
     log_able_type: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '模型'

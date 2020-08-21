@@ -22,13 +22,13 @@ module.exports = function(sequelize, DataTypes) {
       comment: '帖子 id'
     },
     platform_id: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '平台商品 id'
     },
     title: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '商品标题'
@@ -40,19 +40,19 @@ module.exports = function(sequelize, DataTypes) {
       comment: '价格'
     },
     image_path: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '商品封面图'
     },
     type: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '商品来源:0淘宝 1天猫 2京东 等'
     },
     status: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '商品状态:0正常 1失效/下架'

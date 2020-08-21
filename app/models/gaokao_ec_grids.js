@@ -7,11 +7,11 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     img_src: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: true
     },
     target: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: true
     },
     order: {
@@ -19,15 +19,15 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     status: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: true
     },
     category: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: true
     },
     title: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: true
     },
     created_at: {

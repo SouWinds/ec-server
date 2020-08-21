@@ -35,13 +35,13 @@ module.exports = function(sequelize, DataTypes) {
       comment: '提现申请金额'
     },
     cash_status: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '提现状态：1：待审核，2：审核通过，3：审核不通过，4：待打款， 5，已打款， 6：打款失败'
     },
     remark: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '备注或原因'
@@ -52,22 +52,22 @@ module.exports = function(sequelize, DataTypes) {
       comment: '交易时间'
     },
     trade_no: {
-      type: DataTypes.STRING(64),
+      type: DataTypes.STRING,
       allowNull: true,
       comment: '交易号'
     },
     error_code: {
-      type: DataTypes.STRING(64),
+      type: DataTypes.STRING,
       allowNull: true,
       comment: '错误代码'
     },
     error_message: {
-      type: DataTypes.STRING(64),
+      type: DataTypes.STRING,
       allowNull: true,
       comment: '交易失败描叙'
     },
     refunds_status: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '返款状态，0未返款，1已返款'

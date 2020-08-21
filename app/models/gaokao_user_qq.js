@@ -9,19 +9,19 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true
     },
     user_id: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '用户 id'
     },
     openid: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: 'openid'
     },
     nickname: {
-      type: DataTypes.STRING(100),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: 'qq昵称'
@@ -33,19 +33,19 @@ module.exports = function(sequelize, DataTypes) {
       comment: '性别'
     },
     province: {
-      type: DataTypes.STRING(10),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '省份'
     },
     city: {
-      type: DataTypes.STRING(10),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '城市'
     },
     headimgurl: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '头像'

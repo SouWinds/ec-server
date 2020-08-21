@@ -15,7 +15,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     stop_word: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       comment: '触发的敏感词，半角逗号隔开'
     }

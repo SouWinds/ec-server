@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
       comment: '日志 id'
     },
     ip: {
-      type: DataTypes.STRING(45),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: 'ip 地址'

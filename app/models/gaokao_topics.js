@@ -20,13 +20,13 @@ module.exports = function(sequelize, DataTypes) {
       comment: '话题名称'
     },
     thread_count: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '主题数'
     },
     view_count: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '阅读数'

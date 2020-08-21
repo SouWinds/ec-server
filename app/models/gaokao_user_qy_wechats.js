@@ -9,19 +9,19 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true
     },
     user_id: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '用户 id'
     },
     qy_userid: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '企业微信企业用户id, corpid_userid联合全局唯一'
     },
     nickname: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '企业微信昵称'
@@ -33,25 +33,25 @@ module.exports = function(sequelize, DataTypes) {
       comment: '性别'
     },
     email: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '邮箱'
     },
     mobile: {
-      type: DataTypes.STRING(20),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '电话'
     },
     address: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '地址'
     },
     headimgurl: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '头像'

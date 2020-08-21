@@ -4,12 +4,12 @@ module.exports = function(sequelize, DataTypes) {
   return sequelize.define('gaokao_migrations', {
     id: {
       autoIncrement: true,
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
     },
     migration: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false
     },
     batch: {

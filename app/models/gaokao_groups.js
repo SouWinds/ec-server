@@ -10,43 +10,43 @@ module.exports = function(sequelize, DataTypes) {
       comment: '用户组 id'
     },
     name: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '用户组名称'
     },
     type: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '类型'
     },
     color: {
-      type: DataTypes.STRING(20),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '颜色'
     },
     icon: {
-      type: DataTypes.STRING(100),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: 'icon'
     },
     default: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '是否默认'
     },
     is_display: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '是否显示在用户名后'
     },
     is_paid: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '是否收费：0不收费，1收费'

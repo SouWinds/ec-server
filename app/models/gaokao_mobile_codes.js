@@ -10,19 +10,19 @@ module.exports = function(sequelize, DataTypes) {
       comment: '验证码 id'
     },
     mobile: {
-      type: DataTypes.STRING(20),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '手机号'
     },
     code: {
-      type: DataTypes.STRING(10),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '验证码'
     },
     type: {
-      type: DataTypes.STRING(20),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '验证类型'
@@ -34,7 +34,7 @@ module.exports = function(sequelize, DataTypes) {
       comment: '验证状态'
     },
     ip: {
-      type: DataTypes.STRING(45),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: 'ip'

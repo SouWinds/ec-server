@@ -19,7 +19,7 @@ module.exports = function(sequelize, DataTypes) {
       comment: '冻结金额'
     },
     wallet_status: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '钱包状态:0正常，1冻结提现'

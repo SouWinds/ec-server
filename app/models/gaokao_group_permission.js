@@ -8,7 +8,7 @@ module.exports = function(sequelize, DataTypes) {
       comment: '用户组 id'
     },
     permission: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '权限名称'

@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
       comment: '附件 id'
     },
     uuid: {
-      type: DataTypes.CHAR(36),
+      type: DataTypes.BIGINT,
       allowNull: false,
       comment: DataTypes.UUIDV4
     },
@@ -26,61 +26,61 @@ module.exports = function(sequelize, DataTypes) {
       comment: '类型数据ID(post_id,dialog_message_id…)'
     },
     order: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '附件排序'
     },
     type: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '附件类型(0帖子附件，1帖子图片，2帖子视频，3帖子音频，4消息图片)'
     },
     is_approved: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 1,
       comment: '是否合法'
     },
     attachment: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '文件系统生成的名称'
     },
     file_path: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '文件路径'
     },
     file_name: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '文件原名称'
     },
     file_size: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '文件大小'
     },
     file_type: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '文件类型'
     },
     is_remote: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '是否远程附件'
     },
     ip: {
-      type: DataTypes.STRING(45),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: 'ip 地址'

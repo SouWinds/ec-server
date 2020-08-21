@@ -31,7 +31,7 @@ module.exports = function(sequelize, DataTypes) {
       comment: '操作人'
     },
     delete_type: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '删除类型：1到期删除，2管理员修改，3用户复购'

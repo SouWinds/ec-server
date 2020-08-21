@@ -16,19 +16,19 @@ module.exports = function(sequelize, DataTypes) {
       comment: '用户 id'
     },
     path: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: 'url路径'
     },
     method: {
-      type: DataTypes.STRING(10),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '请求方式'
     },
     ip: {
-      type: DataTypes.STRING(45),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: 'ip 地址'
@@ -39,7 +39,7 @@ module.exports = function(sequelize, DataTypes) {
       comment: 'body请求数据'
     },
     type: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '日志类型:0后台操作'

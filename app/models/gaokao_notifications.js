@@ -10,12 +10,12 @@ module.exports = function(sequelize, DataTypes) {
       comment: '通知 id'
     },
     type: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       comment: '通知类型'
     },
     notifiable_type: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false
     },
     notifiable_id: {

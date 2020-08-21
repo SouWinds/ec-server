@@ -15,25 +15,25 @@ module.exports = function(sequelize, DataTypes) {
       comment: '默认用户组 id'
     },
     type: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 1,
       comment: '类型:1普通用户2管理员'
     },
     code: {
-      type: DataTypes.CHAR(32),
+      type: DataTypes.BIGINT(32),
       allowNull: false,
       defaultValue: "",
       comment: '邀请码'
     },
     dateline: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '邀请码生效时间'
     },
     endtime: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '邀请码结束时间'
@@ -50,7 +50,7 @@ module.exports = function(sequelize, DataTypes) {
       comment: '被邀请用户 id'
     },
     status: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 1,
       comment: '邀请码状态:0失效1未使用2已使用3已过期'

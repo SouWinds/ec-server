@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
       comment: '支付通知 id'
     },
     payment_sn: {
-      type: DataTypes.STRING(20),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '支付编号'
@@ -21,13 +21,13 @@ module.exports = function(sequelize, DataTypes) {
       comment: '付款人 id'
     },
     trade_no: {
-      type: DataTypes.STRING(64),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "",
       comment: '商户平台交易号'
     },
     status: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '0未接受到通知，1收到通知'

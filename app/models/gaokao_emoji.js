@@ -10,22 +10,22 @@ module.exports = function(sequelize, DataTypes) {
       comment: '表情 id'
     },
     category: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       comment: '表情分类'
     },
     url: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       comment: '表情地址'
     },
     code: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING,
       allowNull: false,
       comment: '表情符号'
     },
     order: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '显示顺序'

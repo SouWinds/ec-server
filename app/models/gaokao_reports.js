@@ -28,7 +28,7 @@ module.exports = function(sequelize, DataTypes) {
       comment: '回复 id'
     },
     type: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '举报类型:0个人主页 1主题 2评论/回复'
@@ -39,7 +39,7 @@ module.exports = function(sequelize, DataTypes) {
       comment: '举报理由'
     },
     status: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0,
       comment: '举报状态:0未处理 1已处理'

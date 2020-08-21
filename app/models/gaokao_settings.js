@@ -3,7 +3,7 @@
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('gaokao_settings', {
     key: {
-      type: DataTypes.STRING(100),
+      type: DataTypes.STRING,
       allowNull: false,
       primaryKey: true,
       comment: '设置项 key'
@@ -14,7 +14,7 @@ module.exports = function(sequelize, DataTypes) {
       comment: '设置项 value'
     },
     tag: {
-      type: DataTypes.STRING(100),
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "default",
       primaryKey: true,

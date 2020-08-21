@@ -2,7 +2,7 @@
 
 const Controller = require('egg').Controller
 /**
- * @Controller grid
+ * @Controller 首页宫格
  */
 class GridController extends Controller {
   /**
