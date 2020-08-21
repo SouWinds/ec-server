@@ -11,4 +11,8 @@ module.exports = {
     enable: true,
     package: 'egg-sequelize',
   },
+  swaggerdoc: {
+    enable: true, // 是否启用。
+    package: 'egg-swagger-doc', // 指定包名称。
+  },
 }
