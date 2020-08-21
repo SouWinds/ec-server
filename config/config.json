@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "gaokao",
+    "password": "gaokao",
+    "database": "gaokao",
+    "host": "114.67.208.187",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "gaokao",
+    "password": "gaokao",
+    "database": "gaokao",
+    "host": "114.67.208.187",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "gaokao",
+    "password": "gaokao",
+    "database": "gaokao",
+    "host": "114.67.208.187",
+    "dialect": "mysql"
+  }
+}
