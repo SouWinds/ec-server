@@ -16,7 +16,7 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1597920257392_9854'
 
   // add your middleware config here
-  config.middleware = []
+  config.middleware = ['proxy']
 
   // add your user config here
   const userConfig = {
@@ -71,6 +71,30 @@ module.exports = appInfo => {
     routerMap: true, // 是否启用自动生成路由，默认 true (启用)。
     enable: true, // 默认 true (启用)。
   }
+
+  // 接口代理
+  config.proxy = {
+    '/api/v2': {
+        target: 'https://q.e-spy.cn/',
+        changeOrigin: true,
+        secure: false,
+        pathRewrite: { '^/api/v2': 'api' },
+    },
+  }
+
+  // 跨域问题
+  // config.security = {
+  //   // csrf: {
+  //   //   enable: false,
+  //   //   ignoreJSON: true
+  //   // },
+  //   domainWhiteList: ['http://localhost:8080']
+  // }
+  config.cors = {
+    origin:'*',
+    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
+  }
+
   return {
     ...config,
     ...userConfig,
