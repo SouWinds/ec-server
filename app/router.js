@@ -16,7 +16,4 @@ module.exports = app => {
 
   // 官网接口
   router.get('/api/v1/official/setting', controller.official.getSetting)
-
-  // 后台接口
-  // router.post('/api/v1/admin/file/upload', controller.admin.upLoadFile)
 }

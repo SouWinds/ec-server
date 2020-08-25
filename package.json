@@ -7,7 +7,6 @@
     "declarations": true
   },
   "dependencies": {
-    "cos-nodejs-sdk-v5": "^2.6.2",
     "egg": "^2.27.0",
     "egg-cors": "^2.2.3",
     "egg-http-proxy-middleware": "^1.0.1",
