@@ -13,6 +13,7 @@ module.exports = app => {
     property: { type: STRING },
     thread_count: { type: INTEGER },
   })
+  
 
   return Category
 }

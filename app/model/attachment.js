@@ -24,7 +24,7 @@ module.exports = app => {
 
     created_at: { type: DATE },
     updated_at: { type: DATE },
-    deleted_at: { type: DATE },
+    // deleted_at: { type: DATE },
   })
 
   return Attachment

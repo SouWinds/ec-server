@@ -23,5 +23,12 @@ module.exports = app => {
     deleted_user_id: { type: INTEGER },
   })
 
+  Thread.associate = () => {
+    Thread.belongsTo(app.model.models.gaokao_categorie, { foreignKey: 'category_id', targetKey: 'id', as: 'category' });
+    Thread.belongsTo(app.model.models.gaokao_post, { foreignKey: 'id', targetKey: 'thread_id', as: 'posts' });
+    Thread.belongsTo(app.model.models.gaokao_user, { foreignKey: 'user_id', targetKey: 'id', as: 'user' });
+    Thread.belongsTo(app.model.models.gaokao_attachment, { foreignKey: 'id', targetKey: 'id', as: 'attachment' });
+  }
+
   return Thread
 }

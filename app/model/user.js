@@ -113,7 +113,7 @@ module.exports = app => {
       comment: '头像地址'
     },
     identity: {
-      type: BIGINT(18),
+      type: BIGINT,
       allowNull: false,
       defaultValue: "",
       comment: '身份证号码'

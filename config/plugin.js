@@ -2,6 +2,10 @@
 
 /** @type Egg.EggPlugin */
 module.exports = {
+  cors: {
+    enable: true,
+    package: 'egg-cors',
+  },
   // had enabled by egg
   // static: {
   //   enable: true,
@@ -15,8 +19,4 @@ module.exports = {
     enable: true, // 是否启用。
     package: 'egg-swagger-doc', // 指定包名称。
   },
-  cors: {
-    enable: true,
-    package: 'egg-cors',
-  }
 }

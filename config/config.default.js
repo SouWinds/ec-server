@@ -79,7 +79,7 @@ module.exports = appInfo => {
         changeOrigin: true,
         secure: false,
         pathRewrite: { '^/api/v2': 'api' },
-    },
+    }
   }
 
   // 跨域问题
