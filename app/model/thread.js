@@ -7,6 +7,7 @@ module.exports = app => {
     id: { type: INTEGER, primaryKey: true, autoIncrement: true },
     user_id: { type: INTEGER },
     last_posted_user_id: { type: INTEGER },
+    type: {type: INTEGER},
     category_id: { type: INTEGER },
     title: { type: STRING },
     price: { type: INTEGER },

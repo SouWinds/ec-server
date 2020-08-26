@@ -17,7 +17,8 @@ class ThreadController extends Controller {
   async getThread() {
     const { ctx } = this
     const threads = await ctx.model.Thread.findAll({
-      where: ctx.params,
+      where: ctx.query,
+      limit: 20,
       include: [{
         model: ctx.model.Category,
         as: 'category',
