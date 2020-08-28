@@ -30,5 +30,6 @@ module.exports = app => {
     latitude: { type: GEOGRAPHY },
   })
 
+
   return Post
 }

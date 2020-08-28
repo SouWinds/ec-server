@@ -26,9 +26,8 @@ module.exports = app => {
 
   Thread.associate = () => {
     Thread.belongsTo(app.model.models.gaokao_categorie, { foreignKey: 'category_id', targetKey: 'id', as: 'category' });
-    Thread.belongsTo(app.model.models.gaokao_post, { foreignKey: 'id', targetKey: 'thread_id', as: 'posts' });
+    Thread.hasOne(app.model.models.gaokao_post, { foreignKey: 'thread_id', targetKey: 'id', as: 'posts' });
     Thread.belongsTo(app.model.models.gaokao_user, { foreignKey: 'user_id', targetKey: 'id', as: 'user' });
-    Thread.belongsTo(app.model.models.gaokao_attachment, { foreignKey: 'id', targetKey: 'id', as: 'attachment' });
   }
 
   return Thread

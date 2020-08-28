@@ -34,6 +34,8 @@
   },
   "scripts": {
     "start": "egg-scripts start --daemon --title=egg-server-ec-server",
+    "s": "egg-scripts start --port=7001 --daemon --title=egg-server-showcase",
+    "st": "egg-scripts stop [--title=egg-server]",
     "stop": "egg-scripts stop --title=egg-server-ec-server",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
